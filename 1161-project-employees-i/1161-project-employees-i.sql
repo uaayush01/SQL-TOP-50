@@ -5,3 +5,4 @@ join Employee e
 on p.employee_id = e.employee_id
 group by 
 project_id
+order by project_id;
