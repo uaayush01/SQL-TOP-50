@@ -2,7 +2,7 @@
 select 
 left(trans_date, 7) as month, 
 country, 
-count(id) as trans_count,
+count(*) as trans_count,
 sum(state = 'approved') as approved_count,
 sum(amount) as trans_total_amount,
 sum((state = 'approved') * amount) as approved_total_amount
